@@ -19,7 +19,7 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Icon name="Factory" size={32} className="text-primary" />
+              <Icon name="Wind" size={32} className="text-primary" />
               <span className="text-2xl font-bold text-primary">ПНЕВМО-ГРУПП</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -339,7 +339,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Factory" size={28} />
+                <Icon name="Wind" size={28} />
                 <span className="text-xl font-bold">ПНЕВМО-ГРУПП</span>
               </div>
               <p className="text-white/80 text-sm">
