@@ -20,7 +20,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Factory" size={32} className="text-primary" />
-              <span className="text-2xl font-bold text-primary">ПромТех</span>
+              <span className="text-2xl font-bold text-primary">ПНЕВМО-ГРУПП</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
               <button onClick={() => scrollToSection('main')} className="text-sm font-medium hover:text-accent transition-colors">
@@ -220,7 +220,7 @@ const Index = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">О компании</h2>
               <div className="space-y-4 text-lg">
                 <p>
-                  <strong>ПромТех</strong> — ведущий поставщик промышленного оборудования с 2009 года. 
+                  <strong>ПНЕВМО-ГРУПП</strong> — ведущий поставщик промышленного оборудования с 2009 года. 
                   Мы специализируемся на комплексном оснащении производственных предприятий современным 
                   высокотехнологичным оборудованием.
                 </p>
@@ -340,7 +340,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Factory" size={28} />
-                <span className="text-xl font-bold">ПромТех</span>
+                <span className="text-xl font-bold">ПНЕВМО-ГРУПП</span>
               </div>
               <p className="text-white/80 text-sm">
                 Надежный партнер в области промышленного оборудования с 2009 года
@@ -374,7 +374,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-sm text-white/60">
-            © 2024 ПромТех. Все права защищены.
+            © 2024 ПНЕВМО-ГРУПП. Все права защищены.
           </div>
         </div>
       </footer>
