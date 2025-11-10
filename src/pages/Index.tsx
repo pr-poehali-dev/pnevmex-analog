@@ -101,14 +101,122 @@ const Index = () => {
               Широкий ассортимент промышленного оборудования от ведущих мировых производителей
             </p>
           </div>
+          
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-6">Компрессорное оборудование</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {[
+                {
+                  name: 'Винтовой компрессор VS 5',
+                  power: '5.5 кВт',
+                  performance: '0.7 м³/мин',
+                  pressure: '8 бар',
+                  price: '125 000 ₽'
+                },
+                {
+                  name: 'Винтовой компрессор VS 7.5',
+                  power: '7.5 кВт',
+                  performance: '1.2 м³/мин',
+                  pressure: '10 бар',
+                  price: '165 000 ₽'
+                },
+                {
+                  name: 'Винтовой компрессор VS 11',
+                  power: '11 кВт',
+                  performance: '1.8 м³/мин',
+                  pressure: '10 бар',
+                  price: '215 000 ₽'
+                },
+                {
+                  name: 'Винтовой компрессор VS 15',
+                  power: '15 кВт',
+                  performance: '2.5 м³/мин',
+                  pressure: '13 бар',
+                  price: '285 000 ₽'
+                },
+                {
+                  name: 'Винтовой компрессор VS 22',
+                  power: '22 кВт',
+                  performance: '3.6 м³/мин',
+                  pressure: '13 бар',
+                  price: '385 000 ₽'
+                },
+                {
+                  name: 'Поршневой компрессор AP 3',
+                  power: '3 кВт',
+                  performance: '0.5 м³/мин',
+                  pressure: '10 бар',
+                  price: '65 000 ₽'
+                },
+                {
+                  name: 'Поршневой компрессор AP 5.5',
+                  power: '5.5 кВт',
+                  performance: '0.8 м³/мин',
+                  pressure: '10 бар',
+                  price: '95 000 ₽'
+                },
+                {
+                  name: 'Безмасляный компрессор OM 7.5',
+                  power: '7.5 кВт',
+                  performance: '1.1 м³/мин',
+                  pressure: '8 бар',
+                  price: '245 000 ₽'
+                },
+                {
+                  name: 'Дизельный компрессор DS 12',
+                  power: '12 кВт',
+                  performance: '2.0 м³/мин',
+                  pressure: '12 бар',
+                  price: '425 000 ₽'
+                },
+                {
+                  name: 'Компрессорная станция CS 30',
+                  power: '30 кВт',
+                  performance: '5.5 м³/мин',
+                  pressure: '13 бар',
+                  price: '685 000 ₽'
+                }
+              ].map((compressor, index) => (
+                <Card key={index} className="hover:shadow-lg transition-all duration-300">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon name="Cpu" size={24} className="text-accent" />
+                    </div>
+                    <CardTitle className="text-lg">{compressor.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2 text-sm mb-4">
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Мощность:</span>
+                        <span className="font-medium">{compressor.power}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Произв-сть:</span>
+                        <span className="font-medium">{compressor.performance}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-muted-foreground">Давление:</span>
+                        <span className="font-medium">{compressor.pressure}</span>
+                      </div>
+                    </div>
+                    <div className="border-t pt-4 mb-4">
+                      <div className="text-2xl font-bold text-primary">{compressor.price}</div>
+                    </div>
+                    <Button className="w-full" size="sm">
+                      <Icon name="ShoppingCart" size={16} className="mr-2" />
+                      Заказать
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold mb-6">Другие категории</h3>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              {
-                icon: 'Cpu',
-                title: 'Компрессорное оборудование',
-                description: 'Винтовые и поршневые компрессоры производительностью от 0.5 до 50 м³/мин',
-                features: ['Энергоэффективность', 'Низкий уровень шума', 'Автоматизация']
-              },
               {
                 icon: 'Gauge',
                 title: 'Пневматические системы',
